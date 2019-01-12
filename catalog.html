@@ -4,22 +4,16 @@
     <meta charset="utf-8">
     <title>HTML Academy: Техномарт</title>
   </head>
-  <body>
-      
-  </body>
-  @@ -5,201 +5,6 @@
-  <title>HTML Academy: Техномарт</title>
-</head>
 <body>
   <header class="main-header">
     <div class="header-top">
       <a class="header-logo">Техномарт</a>
       <form class="search-form">
-        <input type="text" name="search-form" placeholder="Поиск:">
+        <input class="search-field" type="text" name="search-form" placeholder="Поиск:">
       </form>
-      <a href="#" class="bookmarks">"Закладки: 0"</a>
-      <a href="#" class="basket">"Корзина: 0"</a>
-      <a href="#" class="order">"Оформить заказ"</a>
+      <a href="#" class="bookmarks">Закладки: 0</a>
+      <a href="#" class="basket">Корзина: 0</a>
+      <a href="#" class="order">Оформить заказ</a>
     </div>
     <div class="header-info">
       <h1 class="visually-hidden">
@@ -65,19 +59,49 @@
   <h1 class="page-title">Перфораторы</h1>
   <section>
     <!--ФИЛЬТР ЦЕНЫ-->
-  <form class="filter-brands">
-      <h3 class="filter-bran-title">ПРОИЗВОДИТЕЛЬ:</h3>
-      <input class="filter-brands-item" name="checkbox-1" type="checkbox" value="bosch" checked="checked">BOSCH<br>
-      <input class="filter-brands-item" name="checkbox-2" type="checkbox" value="interskol">ИНТЕРСКОЛ<br>
-      <input class="filter-brands-item" name="checkbox-3" type="checkbox" value="makita" checked="checked">MAKITA<br>
-      <input class="filter-brands-item" name="checkbox-2" type="checkbox" value="dewalt">DEWALT<br>
-      <input class="filter-brands-item" name="checkbox-2" type="checkbox" value="hitachi">HITACHI<br>
-    </form>
-    <form class="filter-battery">
-      <input class="filter-battery-item" name="radio-1" type="radio" value="accum" checked="checked">АККУМУЛЯТОРНЫЕ<br>
-      <input class="filter-battery-item" name="radio-2" type="radio" value="network">СЕТЕВЫЕ<br>
-    </form>
-    <div class="button">Показать</div>
+  <form class="filter-brands" methos="get" action="https://echo.htmlacademy.ru">
+    <fieldset>
+        <legend>ПРОИЗВОДИТЕЛИ:</legend>
+        <ul>
+          <li class="filter-option">
+              <input type="checkbox" name="bosch" id="filter-bosch" checked>
+              <label for="filter-bosch">BOSCH</label>
+          </li>
+          <li class="filter-option">
+              <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="interscol" id="filter-interscol">
+              <label for="filter-interscol">ИНТЕРСКОЛ</label>
+          </li>
+          <li class="filter-option">
+              <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="makita" id="filter-makita" checked>
+              <label for="filter-makita">MAKITA</label>
+          </li>
+          <li class="filter-option">
+              <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="dewalt" id="filter-dewalt">
+              <label for="filter-dewalt">DEWALT</label>
+          </li>
+          <li class="filter-option">
+              <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="hitachi" id="filter-hitachi">
+              <label for="filter-hitachi">HITACHI</label>
+          </li>     
+        </ul>
+    </fieldset>   
+    <fieldset>
+      <legend>ПИТАНИЕ:</legend>
+      <ul>
+        <li class="filter-option">
+            <input class="visually-hidden filter-input filter-input-radio" type="radio" name="product-group" value="accum" id="filter-acume">
+            <label for="filter-accume">АККУМУЛЯТОРНЫЕ</label>
+        </li>
+        <li class="filter-option">
+            <input class="visually-hidden filter-input filter-input-radio" type="radio" name="product-group" value="network" id="filter-network">
+            <label for="filter-network">СЕТЕВЫЕ</label>
+        </li>
+      </ul>
+    </fieldset>
+    <button type="submit" class="filter-button button" >
+      Показать
+    </button>
+  </form>
   </section>
   <section class="">
     <!--ЗДЕСЬ БУДЕТ ФИЛЬТР "СОРТИРОВКА"-->
@@ -207,7 +231,5 @@
   </p>
   </sectiion>
   </footer>
-</body>
-    
 </body>
 </html>
