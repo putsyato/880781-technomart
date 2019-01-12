@@ -11,9 +11,9 @@
         <form class="search-form">
           <input type="text" name="search-form" placeholder="Поиск:">
         </form>
-        <a href="#" class="bookmarks">"Закладки: 0"</a>
-        <a href="#" class="basket">"Корзина: 0"</a>
-        <a href="#" class="order">"Оформить заказ</a>
+        <a href="#" class="bookmarks">Закладки: 0</a>
+        <a href="#" class="basket">Корзина: 0</a>
+        <a href="#" class="order">Оформить заказ</a>
       </div>
       <div class="header-info">
         <h1 class="visually-hidden">
@@ -72,19 +72,45 @@
     </span>
       <a href="#" class="button">Заблудились? Напишите нам!</a>
   </section>
+  <section class="appoinment">
+      <h2 class="visually-hidden"></h2>
+      <form class="ask-form" action="echo.html.ru" method="POST">
+        <p class="appoinment-item">
+          <label for="appoinment-name">
+            Ваше имя:
+          </label >
+          <input id="appoinment-name" type="text" name="name" value="" placeholder="Имя Фамилия">
+        </p>
+        <p class="appoinment-item">
+            <label for="appoinment-mail">
+              Ваш e-mail:
+            </label >
+            <input id="appoinment-mail" type="text" name="mail" value="" placeholder="email@example.ru">
+          </p>
+          <p class="appoinment-item">
+              <label for="appoinment-letter">
+                Текст письма:
+              </label >
+              <input id="appoinment-letter" type="text" name="letter" value="" placeholder="В свободной форме">
+            </p>
+      </form>
+      <button class="modal-close" type="button">
+        x
+      </button>
+    </section>
 </main>
 <footer class="main-footer">
   <section class="container">
 <nav class="footer-menu">
   <ul>
     <li><a href="#">Компания</a></li>
-    <li><a href="#">Новсоти</a></li>
+    <li><a href="#">Новости</a></li>
     <li><a href="#">Каталог</a></li>
     <li><a href="#">Доставка</a></li>
     <li><a href="#">Контакты</a></li>
   </ul>
 </nav>
-<div class="middle-foter">
+<div class="middle-footer">
 <p class="footer-contacts">
     г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8<br>
     +7 (812) 555-05-55
