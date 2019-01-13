@@ -72,32 +72,7 @@
     </span>
       <a href="#" class="button">Заблудились? Напишите нам!</a>
   </section>
-  <section class="appoinment">
-      <h2 class="visually-hidden"></h2>
-      <form class="ask-form" action="echo.html.ru" method="POST">
-        <p class="appoinment-item">
-          <label for="appoinment-name">
-            Ваше имя:
-          </label >
-          <input id="appoinment-name" type="text" name="name" value="" placeholder="Имя Фамилия">
-        </p>
-        <p class="appoinment-item">
-            <label for="appoinment-mail">
-              Ваш e-mail:
-            </label >
-            <input id="appoinment-mail" type="text" name="mail" value="" placeholder="email@example.ru">
-          </p>
-          <p class="appoinment-item">
-              <label for="appoinment-letter">
-                Текст письма:
-              </label >
-              <input id="appoinment-letter" type="text" name="letter" value="" placeholder="В свободной форме">
-            </p>
-      </form>
-      <button class="modal-close" type="button">
-        Закрыть
-      </button>
-    </section>
+  
 </main>
 <footer class="main-footer">
   <section class="container">
@@ -148,5 +123,61 @@
 </p>
 </sectiion>
 </footer>
+<section class="modal modal-login">
+  <h2>Личный кабинет</h2>
+  <p>Введите свой логин и пароль</p>
+  <form class="login-form" action="https://echo.htmlacademy.ru" method="POST">
+    <p>
+        <label class="visually-hidden" for="user-login">Логин</label>
+        <input class="login-icon-user" type="text" name="login" placeholder="Логин">
+    </p>
+    <p>
+        <label class="visually-hidden" for="user-password">Пароль</label>
+        <input class="login-icon-password" type="text" name="login" placeholder="Пароль">
+    </p>
+    <p class="login-password-info">
+      <label for="login-password-info">
+        <input type="checkbox" name="remember">
+        Запомните меня
+      </label>
+      <a class="restore" href="#">Я забыл свой пароль!</a>
+    </p>
+    <button class="button" type="submit">
+      Войти
+    </button>
+  </form>
+  <button class="modal-close" type="button">
+    Закрыть
+  </button>
+</section>
+<section class="modal modal-map">
+    <h2 class="visually-hidden">Напишите нам!</h2>
+    <form class="ask-form" action="https://echo.htmlacademy.ru" method="POST">
+      <p class="appoinment-item">
+        <label for="appoinment-name">
+          Ваше имя:
+        </label >
+        <input id="appoinment-name" type="text" name="name" value="" placeholder="Имя Фамилия">
+      </p>
+      <p class="appoinment-item">
+          <label for="appoinment-mail">
+            Ваш e-mail:
+          </label >
+          <input id="appoinment-mail" type="text" name="mail" value="" placeholder="email@example.ru">
+        </p>
+        <p class="appoinment-item">
+            <label for="appoinment-letter">
+              Текст письма:
+            </label >
+            <input id="appoinment-letter" type="text" name="letter" value="" placeholder="В свободной форме">
+          </p>
+          <button class="button" type="submit">
+              Отправить
+            </button>
+    </form>
+    <button class="modal-close" type="button">
+      Закрыть
+    </button>
+  </section>
 </body>
 </html>
